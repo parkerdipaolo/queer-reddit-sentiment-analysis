@@ -47,6 +47,10 @@ Once data has been collected from the specified subreddit(s) and queries, the fi
 
 After the model has been fine-tuned on the Reddit data, the Winoqueer data is parsed to extract the pairwise sentences, and text classification pipelines are instantiated for sentiment analysis on this data. The label predictions from the off-the-shelf and fine-tuned models are compared in a confusion matrix. This task uses functions from data_files.py and sentiment_analysis.py.
 
+### Workflow visualization
+
+![Workflow visualization flowchart](./LING%20742_workflow_finalized.jpeg)
+
 ## Data
 
 ### Fine-tuning dataset

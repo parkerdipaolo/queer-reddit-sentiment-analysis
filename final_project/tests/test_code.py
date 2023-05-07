@@ -11,12 +11,14 @@ def test_concatenate():
     control_df = pd.DataFrame({'Title': ['Hello', 'Goodbye', 'Hello', 'Goodbye'],
                                'Body': ['world', 'BERT', 'BERT', 'world'],
                                'Comments': ['!', '.', '!', '.'],
-                               'Post ID': ['1', '2', '3', '4'],
+                               'Post ID': [1, 2, 3, 4],
                                'Subreddit': ['a', 'b', 'c', 'd'],
-                               'Score': ['10', '10', '10', '10'],
-                               'Upvote ratio': ['1', '1', '1', '1'],
-                               'Date': ['0', '0', '0', '0']
+                               'Score': [10, 10, 10, 10],
+                               'Upvote ratio': [1, 1, 1, 1],
+                               'Date': [0, 0, 0, 0]
                                })
+    print(test_df)
+    print(control_df)
     assert test_df.equals(control_df)
 
 

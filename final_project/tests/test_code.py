@@ -6,6 +6,7 @@ from final_project.utils.sentiment_analysis import extract_sentences, create_pip
 
 
 def test_concatenate():
+    # test concatenate function on dummy data; compare newly written file to control dataframe
     concatenate('test_data')
     test_df = pd.read_csv('test_data/Reddit_data.tsv', delimiter='\t')
     control_df = pd.DataFrame({'Title': ['Hello', 'Goodbye', 'Hello', 'Goodbye'],
@@ -17,8 +18,6 @@ def test_concatenate():
                                'Upvote ratio': [1, 1, 1, 1],
                                'Date': [0, 0, 0, 0]
                                })
-    print(test_df)
-    print(control_df)
     assert test_df.equals(control_df)
 
 

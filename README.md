@@ -51,7 +51,7 @@ After the model has been fine-tuned on the Reddit data, the Winoqueer data is pa
 
 ### Workflow visualization
 
-![Workflow visualization flowchart](./LING%20742_workflow_finalized.jpeg)
+![Workflow visualization flowchart](./LING%20472_workflow_finalized.jpeg)
 
 ## Data
 

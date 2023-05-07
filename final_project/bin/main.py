@@ -9,14 +9,13 @@ from final_project.utils.sentiment_analysis import extract_sentences, create_pip
 
 def main():
     parser = argparse.ArgumentParser(description='Code for performing name matching')
-    parser.add_argument('-task', help='task to perform: scrape Reddit for data, fine-tune BERT model, '
-                                      'or conduct sentiment analysis', choices=['scrape', 'finetune', 'sentiment'],
-                        required=True)
-    parser.add_argument('-sr', help='subreddit(s) to scrape;'
-                                    'if pulling from more than one at a time, concatenate using the following format:'
-                                    'subreddit1+subreddit2')
-    parser.add_argument('-q', help='query to search subreddit(s) for')
-    parser.add_argument('-f', help='data directory')
+    parser.add_argument('task', help='task to perform: scrape Reddit for data, fine-tune BERT model, '
+                                     'or conduct sentiment analysis', choices=['scrape', 'finetune', 'sentiment'])
+    parser.add_argument('-sr', help='subreddit(s) to scrape; '
+                                    'if pulling from more than one at a time, concatenate using the following format: '
+                                    'subreddit1+subreddit2; required with scrape task')
+    parser.add_argument('-q', help='query to search subreddit(s) for; required with scrape task')
+    parser.add_argument('-f', help='data directory; required with finetune task')
 
     args = parser.parse_args()
 

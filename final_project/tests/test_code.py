@@ -1,7 +1,23 @@
 import pandas as pd
 
 from sklearn.pipeline import Pipeline
+from final_project.utils.data_files import concatenate
 from final_project.utils.sentiment_analysis import extract_sentences, create_pipelines, run_pipelines
+
+
+def test_concatenate():
+    concatenate('test_data')
+    test_df = pd.read_csv('test_data/Reddit_data.tsv', delimiter='\t')
+    control_df = pd.DataFrame({'Title': ['Hello', 'Goodbye', 'Hello', 'Goodbye'],
+                               'Body': ['world', 'BERT', 'BERT', 'world'],
+                               'Comments': ['!', '.', '!', '.'],
+                               'Post ID': ['1', '2', '3', '4'],
+                               'Subreddit': ['a', 'b', 'c', 'd'],
+                               'Score': ['10', '10', '10', '10'],
+                               'Upvote ratio': ['1', '1', '1', '1'],
+                               'Date': ['0', '0', '0', '0']
+                               })
+    assert test_df.equals(control_df)
 
 
 def test_extract_sentences():

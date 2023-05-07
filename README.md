@@ -1,6 +1,8 @@
 # Evaluating Anti-Queer Bias in BERT
 This project scraped Reddit subreddits (/trans and /NonBinary) to fine-tune BERT using domain-specific language. The off-the-shelf and fine-tuned models were then used in a sentiment analysis task on [Katy Felkner's Winoqueer dataset](https://github.com/katyfelkner/winoqueer) to compare sentiment label predictions.
 
+Project by Parker DiPaolo, Sophie Henry, Kris Cook, and Sydney Toltz.
+
 ## Installation
 To install the necessary packages and dependencies, navigate to the root directory of the project and create a virtual environment with conda:
 

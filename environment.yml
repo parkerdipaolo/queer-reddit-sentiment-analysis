@@ -1,28 +1,21 @@
-name: anly521
+name: final_project
 channels:
-  - apple
   - conda-forge
 dependencies:
+  - argparse
+  - csv
   - datasets
-  - jupyterlab
-  - more-itertools
+  - datetime
+  - matplotlib
   - nltk
   - numpy
-  - pydantic
-  - pytorch
-  - pyyaml
-  - pip
-  - pytest
-  - python
-  - jupyter
-  - tqdm
-  - transformers
-  - spacy
-  - scipy
-  - scikit-learn
   - pandas
-  - matplotlib
+  - pathlib
+  - pipeline
+  - seaborn
+  - sklearn
   - pip:
-    - tensorflow-macos
-    - tensorflow-metal
-    - tensorflow-deps
+    - praw
+    - emoji
+    - torch
+    - transformers
